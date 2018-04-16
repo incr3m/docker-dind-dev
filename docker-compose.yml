@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
    dind:
-     image: docker:dind
+     image: incr3m/docker-dind-dev
      volumes:
        - dind-data:/opt/dev
      privileged: true
