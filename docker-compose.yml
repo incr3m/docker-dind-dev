@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+   dind:
+     image: docker:dind
+     volumes:
+       - dind-data:/opt/dev
+     privileged: true
+     network_mode: "host"
+volumes:
+    dind-data:
